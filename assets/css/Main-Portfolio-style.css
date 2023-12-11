@@ -1,0 +1,1927 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Expletus Sans', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 500vh;
+    background: #1f2e61;
+}
+
+
+/*
+    ########################
+    #                      #
+    #     Fondo animado    #
+    #                      #
+    ########################
+*/
+.circulos{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: rgb(131, 81, 148);
+    position: fixed;
+    z-index: 0;
+    filter: blur(2rem);
+    -webkit-filter: blur(2rem);
+    animation: circulo1 10s ease infinite both;
+    -webkit-animation: circulo1 10s ease infinite both;
+}
+
+.circulos .circulo{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    animation: circulo1 100s ease infinite both;
+    -webkit-animation: circulo1 100s ease infinite both;
+}
+
+.circulos .circulo1{
+   top: 0%;
+   left: 0%;
+   
+}
+@keyframes circulo1 {
+    from{
+        transform: rotate(0deg) scale(3);
+        -webkit-transform: rotate(0deg) scale(3);
+        -moz-transform: rotate(0deg) scale(3);
+        -ms-transform: rotate(0deg) scale(3);
+        -o-transform: rotate(0deg) scale(3);
+    }to{
+        transform: rotate(360deg) scale(3);
+        -webkit-transform: rotate(360deg) scale(3);
+        -moz-transform: rotate(360deg) scale(3);
+        -ms-transform: rotate(360deg) scale(3);
+        -o-transform: rotate(360deg) scale(3);
+    }
+}
+.circulos .circulo1 .path{
+    fill: rgb(155, 80, 163);
+}
+
+.circulos .circulo2{
+    top: 0%;
+    right: 0%;
+}
+
+.circulos .circulo2 .path{
+    
+    fill: rgb(159, 46, 110);
+}
+
+.circulos .circulo3{
+   bottom: 0%;
+   right: 0%;
+}
+
+.circulos .circulo3 .path{
+    fill: rgb(188, 80, 109);
+}
+
+.circulos .circulo4{
+    bottom: 0%;
+    left: 0%;
+}
+
+.circulos .circulo4 .path{
+    fill: rgb(50, 191, 246);
+}
+
+
+/*
+    ########################
+    #                      #
+    #     Barra de Nav     #
+    #                      #
+    ########################
+*/
+
+
+.navBar{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #d2cccc10;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+    box-shadow: 10px 10px 40px hsla(0, 4%, 78%, 0.4);
+    z-index: 1000;
+}
+
+.container-logo-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+}
+
+.container-logo-nav .img-logo-nav-ref .img-logo-nav{
+    height: 80px;
+}
+
+.name-logo-nav{
+    font-weight: 900;
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+}
+
+.name-logo-nav:hover{
+    color: #efb810;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.lista-btn-nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 5px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.lista-btn-nav li{
+    margin-right: 40px;
+    color: black;
+    padding: 10px;
+}
+
+.lista-btn-nav li:hover{
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: -4px 8px 24px hsla(0, 0%, 3%, 0.25);
+    border-radius: 30px;
+    transition: 0.2s;
+    margin-top: 5px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+
+.lista-btn-nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.lista-btn-nav li a:hover{
+    color: white;
+}
+
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;    
+}
+
+.menu-icon, #check{
+    display: none;
+}
+
+.lista-btn-nav li .active{
+    color: white;
+    text-decoration: line-through rgb(241, 68, 68);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+/*
+    ########################
+    #                      #
+    #     Presentacion     #
+    #                      #
+    ########################
+*/
+
+#Presentacion{
+    height: 100vh;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    /* background-color: beige; */
+}
+
+#Presentacion .presentacion-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    z-index: 2;
+    text-align: center;
+    margin-top: 4rem;
+    padding: 20px;
+}
+
+#Presentacion .presentacion-container .texto-presentacion{
+    z-index: 2;
+    margin-top: 60px;
+    margin-bottom: 1.2rem;
+    width: 80%;
+}
+
+#Presentacion .presentacion-container .texto-presentacion h1 span{
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: .2rem;
+    color: rgb(0, 0,0, 0.7);
+    z-index: 2;   
+}
+
+
+#Presentacion .presentacion-container .texto-presentacion h2{
+    font-style: italic;
+    font-weight: 600;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    z-index: 2;
+}
+
+#Presentacion .presentacion-container .image-presentacion {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #d2cccc10;
+    backdrop-filter: blur(80px);
+    box-shadow: -4px 8px 24px hsla(0, 0%, 3%, 0.25);
+    height: 400px;
+    width: 600px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#Presentacion .presentacion-container .image-presentacion img{
+    height: 400px;
+
+}
+
+#Presentacion .presentacion-container .texto-presentacion .contenedor-texto{
+    display: flex;
+    align-content: center;
+    width: 40%;
+}
+
+
+
+
+/*
+    ########################
+    #                      #
+    #     Sobre Mi         #
+    #                      #
+    ########################
+*/
+#SobreMi{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SobreMi .contenedor-about{
+    z-index: 4;
+    background: #15141410;
+    backdrop-filter: blur(80px);
+    box-shadow: 10px 10px 40px hsla(0, 0%, 4%, 0.4);
+    border-radius: 20px;
+    position: absolute;
+    height: 80%;
+    width: 95%;
+    margin-top: 15vh;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 2px solid white;
+}
+
+.circ-nav{
+    z-index: 5;
+    background: #ffffff;
+    /* backdrop-filter: blur(80px); */
+    box-shadow: 10px 10px 40px hsla(0, 4%, 78%, 0.4);
+    border-radius:20px 20px 0 0 ;
+    -webkit-border-radius:20px 20px 0 0 ;
+    -moz-border-radius:20px 20px 0 0 ;
+    -ms-border-radius:20px 20px 0 0 ;
+    -o-border-radius:20px 20px 0 0 ;
+}
+
+.circ-nav .cir{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 20px;
+}
+
+.codigo-sobre-mi .image-kaizen {
+    height: 70vh;
+    width: 90vh;
+}
+
+.codigo-sobre-mi{
+    display: flex;
+    z-index: 4;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    background: #15141410;
+    backdrop-filter: blur(80px);
+    box-shadow: 10px 10px 40px hsla(0, 4%, 78%, 0.4);
+    height: 66vh;
+    width: 90vh;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.kaizen{
+    position: absolute;
+    z-index: 3;
+    height: 70vh;
+    width: 90vh;
+    opacity: 0.33;
+}
+
+.body-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenido-sobre-mi {
+    /* background-color: #efb810; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 20px;
+    align-self: flex-start;
+    text-wrap: balance;
+}
+
+.body-about .contenido-sobre-mi h1{
+    font-size: 6vh;
+    color: #ffffffc8;
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    text-orientation: upright;
+    -webkit-text-orientation: upright;
+    border-right:thick double #ffffffbc;
+    margin-right: 10px;
+}
+
+
+.contenido-sobre-mi p{
+    margin-top: 40px;
+    font-size: 4vh;
+    text-wrap: balance;
+    font-weight: bold;
+    color: #ffffffc8;
+}
+
+
+
+
+/*
+    ########################
+    #                      #
+    #     Abilidades       #
+    #                      #
+    ########################
+*/
+
+#Abilidades{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#Abilidades .container-skill{
+    z-index: 4;
+    background: #15141410;
+    backdrop-filter: blur(80px);
+    border: 2px solid white;
+    box-shadow: 10px 10px 40px hsla(0, 4%, 83%, 0.4);
+    border-radius: 20px;
+    position: absolute;
+    height: 80%;
+    width: 95%;
+    margin-top: 15vh;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+}
+
+.skill-header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
+}
+
+.skill-header span {
+    font-size: 30px;
+    color: black;
+  }
+
+.skill-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 white;
+  }
+
+.skill-header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 white;
+}
+
+.skill-body{
+    z-index: 2;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+
+.derecha-skill{
+    z-index: 2;
+    width: 55rem;
+    height: 20rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.izquierda-skillb{
+    z-index: 2;
+    width: 35rem;
+    height: 20rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.derecha-skill{
+    margin-left: 5px;
+}
+
+
+.container-skill-bar{
+    width: 100%;
+    height: 100%;
+    background: #0606062a;
+    backdrop-filter: blur(80px);
+    border-radius: 7px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.container-skill-bar .skill-box{
+    width: 100%;
+    margin: 1px 0 ;
+    padding: 10px;
+}
+.skill-box .title{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 3px;
+    background: rgba(201, 182, 182, 0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #1f2e61;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+    -webkit-animation: progress 0.4s ease-in-out forwards;
+}
+.skill-per.html{
+    width: 90%;
+    animation-delay: 0.1s;
+}
+
+.skill-per.css{
+    width: 70%;
+    animation-delay: 0.1s;
+}
+.skill-per.javascript{
+    width: 50%;
+    animation-delay: 0.2s;
+}
+.skill-per.nodejs{
+    width: 40%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.cmm{
+    width: 80%;
+    animation-delay: 0.1s;
+}
+
+.skill-per.java{
+    width: 95%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.python{
+    width: 70%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.git{
+    width: 30%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.github{
+    width: 45%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.sql{
+    width: 40%;
+    animation-delay: 0.3s;
+}
+.skill-per.tw{
+    width: 40%;
+    animation-delay: 0.3s;
+}
+.skill-per.bost{
+    width: 40%;
+    animation-delay: 0.3s;
+}
+
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #214093;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #214093;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+
+.izquierda-skillb{    
+    /* background-color: #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #15141452;
+    backdrop-filter: blur(5px);
+}
+
+.izquierda-skill{
+    height: 55vh;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: stretch;
+    align-items: center;
+    gap: 2rem 2rem;
+}
+
+.contenedor-icon-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #15141452;
+    backdrop-filter: blur(80px);
+    box-shadow: 10px 10px 40px hsla(255, 65%, 42%, 0.4);
+    border: 0.5px solid rgb(81, 76, 76);
+    width:5rem;
+    height:5rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    padding: 5px;
+    align-self: center;
+}
+
+.contenedor-icon-skill .target-skill-image  img{
+    width:4rem;
+    height:4rem;
+    margin-top: 3px;
+}
+
+/*
+    ########################
+    #                      #
+    #     Proyectos        #
+    #                      #
+    ########################
+*/
+#Proyectos{
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Proyectos .container-projects{
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 95%;
+    margin-top: 15vh;
+}
+
+.container-projects .container-titulo-projects{
+    background: rgb(61, 35, 176);
+    z-index: 4;
+    box-shadow: 10px 10px 40px hsla(0, 4%, 78%, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vh;
+    width: 30vh;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: #15141452;
+    backdrop-filter: blur(80px);
+    margin-bottom: 50px;
+}
+
+.container-titulo-projects h1{
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.target-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30px; */
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 2px solid white;
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    box-shadow: 10px 10px 40px hsla(0, 4%, 78%, 0.4);  
+}
+
+.target-content img{
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.target-content .target-body{
+    width: 100%;
+    z-index: 4;
+    height: 100%;
+    top:0;
+    right:-100%;
+    position: absolute;
+    background: #1f3d470b;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+.target-content:hover .target-body{
+    right: 0;
+    top: 0;
+}
+
+.target-body .target-body-title{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.target-body-texto{
+    font-size: 15px;
+    line-height: 15px;
+    margin: 40px 0;
+    font-weight: 400;
+    text-align: end;
+    line-height: 25px;
+}
+
+.target-body .target-body-texto .target-content-subtitle{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.p1{
+    margin-bottom:20px;
+}
+
+.enlace-git-btn{
+    color:#030303;
+    background: #1f3d470b;
+    border: .5px solid white;
+    box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
+    backdrop-filter: blur(3px);
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-transform: capitalize;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-top: 10px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.enlace-git-btn:hover{
+    color: white;
+    background-color: #03030375;
+}
+
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 160vh;
+    height: 50vh;
+}
+
+
+
+
+/*
+    ########################
+    #                      #
+    #     Contacto         #
+    #                      #
+    ########################
+*/
+
+#Contacto{
+    height: 80vh;
+    z-index: 2;
+}
+
+.container-contacto{
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-top: 16vh;
+}
+
+.information ,.contact-form{
+    z-index: 4;
+    margin-top: 10vh;
+    height: 65%;
+    width: 40%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    color: #ffffffc8;
+    backdrop-filter: blur(80px);
+    border: 2px solid white;
+    box-shadow: 10px 10px 40px hsla(0, 4%, 83%, 0.4);
+}
+
+.information h1{
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+}
+
+.sect-information{
+    margin-top: 20px;
+
+}
+
+.header-container-text{
+    display: flex;
+    align-items: flex-start;
+}
+
+.header-container-text h2{
+    font-size: 20px;
+}
+.container-text p{
+    color: #030303;
+}
+.container-text a{
+    text-decoration: none;
+    color: #030303;
+}
+
+.information img{
+    height: 25px;
+    margin-right: 10px;
+}
+
+.header-container-text .img-location{
+    height: 18px;
+    margin-top: 3px;
+}
+
+.contact-form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact-form h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form-input{
+    background: #1f3d470b;
+    backdrop-filter: blur(3px);
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    height: 60%;
+    width: 90%; 
+    padding: 5px;
+}
+::placeholder { 
+    color: rgba(255, 255, 255, 0.592)
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 25%;
+    width:90%;
+    
+}
+
+.fullname{
+    margin-right: 30px;
+}
+
+.form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+
+.form-btn{
+    margin-top: 10px;
+    margin-left: 225px;
+    height: 20%;
+    width: 40%;
+    border-radius: 5px;
+    border-style: none;
+    background: #1f3d470b;
+    backdrop-filter: blur(3px);
+    border: 1px solid white;
+    color: white;
+}
+
+.form-btn:hover{
+    background: #1f3d475d;
+    backdrop-filter: blur(6px);
+}
+
+/*
+    ########################
+    #                      #
+    #       Foter          #
+    #                      #
+    ########################
+*/
+
+footer{
+    height: 20vh;
+    z-index: 2;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #d2cccc10;
+    backdrop-filter: blur(2px);
+}
+
+.socials{
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials a img{
+    z-index: 4;
+    height: 30px;
+    margin: 10px;
+}
+
+/*
+    ########################
+    #                      #
+    #     Media Query      #
+    #                      #
+    ########################
+*/
+
+@media (max-width:500px) {
+    .checkBoton{
+        display: block;
+        z-index: 2;
+    }
+
+    body{
+        height: 750vh;
+    }
+
+    /*
+    ########################
+    #                      #
+    #     Barra de Nav  MQ #
+    #                      #
+    ########################
+    */
+
+    .navBar{
+        box-shadow: none;
+        z-index: 300;
+        width: 90vh;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 2rem;
+        cursor: pointer;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+}
+    .menu-icon img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu-icon img:hover{
+        width: 60px;
+        height: 60px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+    } 
+    .menu-icon:hover{
+        top: 12px;
+        right: 18px;
+        transition: .1s;
+        -webkit-transition: .1s;
+        -moz-transition: .1s;
+        -ms-transition: .1s;
+        -o-transition: .1s;
+    }
+    .lista-btn-nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:flex-start;
+        position: fixed;
+        top: 5rem;
+        left: -1000%;
+        background-color: #16151590;
+        backdrop-filter: blur(10000px);
+        width: 96%;
+        height: 100vh;
+        right: 0;
+    }
+    .lista-btn-nav li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        margin: 2px;
+        border-radius: 40px;
+        background-color: #2e346e;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+        font-size:  30px;
+        width: 50vh;
+        height: 9vh;
+    }
+    .lista-btn-nav li:hover{
+        cursor: pointer;
+        color: #efb810;
+        border: 1px solid white;
+        transition: 0.1s;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+        -ms-transition: 0.1s;
+        -o-transition: 0.1s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: .15s;
+        -webkit-transition: .15s;
+        -moz-transition: .15s;
+        -ms-transition: .15s;
+        -o-transition: .15s;
+}
+
+    /*
+    ########################
+    #                      #
+    #     Presentacion MQ  #
+    #                      #
+    ########################
+    */
+
+    #Presentacion, #Presentacion .presentacion-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Presentacion .presentacion-container .texto-presentacion{
+        width: 100%;
+        line-height: 1rem;
+    }
+
+    #Presentacion .presentacion-container .texto-presentacion h1 span{
+        font-size: 2.5rem;
+    }
+
+    #Presentacion .presentacion-container .texto-presentacion h2{
+        font-size: 1.5rem;
+    }
+
+    #Presentacion .presentacion-container .image-presentacion{
+        height: 250px;
+        width: 250px;
+    }
+
+    #Presentacion .presentacion-container .image-presentacion img{
+        height: 280px;
+    }
+/*
+    ########################
+    #                      #
+    #     Sobre Mi   MQ375 #
+    #                      #
+    ########################
+*/
+
+#SobreMi .contenedor-about{
+    background: #15141410;
+    backdrop-filter: blur(80px);
+    box-shadow: 10px 10px 40px hsla(0, 0%, 100%, 0.4);
+    /* position: absolute; */
+    height: 80%;
+    width: 97%;
+    margin-top: 0vh;
+}
+
+.body-about{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.codigo-sobre-mi{
+    position: relative;
+    height: 28vh;
+    width: 80vh;
+    order:1;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+}
+
+.contenido-sobre-mi {
+    align-self:start;
+    text-wrap: balance;
+}
+
+.codigo-sobre-mi .image-kaizen{
+    height: 25vh;
+    width: 100vh;
+}
+
+
+
+.kaizen{
+    position: absolute;
+    z-index: 3;
+    height: 80vh;
+    width: 50vh;
+    opacity: 0.33;
+    margin-right: 5rem;
+    margin-top: 12rem;
+    align-self: flex-end;
+}
+
+
+.body-about .contenido-sobre-mi h1{
+    font-size: 3vh;
+    margin-right: 1rem;
+    margin-left: -2rem;
+}
+
+
+.contenido-sobre-mi p{
+    font-size: 90%; 
+    margin-top: 0rem; 
+}
+
+/*
+    ########################
+    #                      #
+    #     Abilidades  MQ   #
+    #                      #
+    ########################
+*/
+
+#Abilidades{
+    height: 200vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+}
+
+#Abilidades .container-skill{
+    border-radius: 20px;
+    height: 180vh;
+    width: 95%;
+    margin-top: 0vh;
+}
+
+.skill-body{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    flex-direction: column;    
+}
+
+.derecha-skill, .izquierda-skillb{
+    width: 70vh;
+    height: 75vh;
+}
+
+.derecha-skill{
+    margin-top: 2rem;
+}
+
+
+.container-skill-bar{
+    width: 100%;
+    height: 110%;
+    border-radius: 7px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.container-skill-bar .skill-box{
+    width: 100%;
+    margin: 5px 0 ;
+    padding: 10px;
+}
+
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.izquierda-skillb{    
+    margin-right: 0; 
+}
+
+.izquierda-skill{
+    height: 90%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem 0rem;
+    justify-items: center;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.contenedor-icon-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #15141452;
+    backdrop-filter: blur(80px);
+    box-shadow: 10px 10px 40px hsla(255, 65%, 42%, 0.4);
+    border: 0.5px solid rgb(81, 76, 76);
+    width:5rem;
+    height:5rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-left: 1vh;
+}
+
+.contenedor-icon-skill .target-skill-image  img{
+    width:4rem;
+    height:5rem;
+    margin-top: 3px;
+}
+
+/*
+    ########################
+    #                      #
+    #     Proyectos QM     #
+    #                      #
+    ########################
+*/
+#Proyectos{
+    z-index: 2;
+    height: 180vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+#Proyectos .container-projects{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 95%;
+    width: 95%;
+}
+
+.container-projects .container-titulo-projects{
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+
+.target-content{
+    margin-bottom: 20px; 
+}
+
+.swiper-wrapper{
+    flex-direction: column;   
+}
+
+.p1{
+    margin-bottom:0px;
+}
+
+/*
+    ########################
+    #                      #
+    #     Contacto MQ      #
+    #                      #
+    ########################
+*/
+
+
+#Contacto{
+    height: 150vh;
+    z-index: 2;
+}
+
+.container-contacto{
+    z-index: 4;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+}
+
+.information ,.contact-form{
+    z-index: 4;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 65%;
+    width: 90%;
+}
+
+
+.form-btn{
+    margin-top: 25px;
+    margin-left: 200px;
+    height: 20%;
+    width: 40%;
+    border-radius: 5px;
+    border-style: none;
+    background: #1f3d470b;
+    backdrop-filter: blur(3px);
+    border: 1px solid white;
+    color: white;
+}
+
+.form-btn:hover{
+    background: #1f3d475d;
+    backdrop-filter: blur(6px);
+}
+
+
+
+}
+
+@media (max-width:375px) {
+    .checkBoton{
+        display: block;
+        z-index: 2;
+    }
+
+    body{
+        height: 750vh;
+    }
+
+    /*
+    ########################
+    #                      #
+    #     Barra de Nav  MQ #
+    #                      #
+    ########################
+    */
+
+    .navBar{
+        box-shadow: none;
+        width: 57vh;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 1.6rem;
+        right: 2rem;
+        cursor: pointer;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+}
+    .menu-icon img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu-icon img:hover{
+        width: 60px;
+        height: 60px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+    } 
+    .menu-icon:hover{
+        top: 12px;
+        right: 18px;
+        transition: .1s;
+        -webkit-transition: .1s;
+        -moz-transition: .1s;
+        -ms-transition: .1s;
+        -o-transition: .1s;
+    }
+    .lista-btn-nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:flex-start;
+        position: fixed;
+        top: 5rem;
+        left: -1000%;
+        background-color: #16151590;
+        backdrop-filter: blur(10000px);
+        width: 96%;
+        height: 100vh;
+        right: 0;
+    }
+    .lista-btn-nav li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        margin: 2px;
+        border-radius: 40px;
+        background-color: #2e346e;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+        font-size:  30px;
+        width: 50vh;
+        height: 9vh;
+    }
+    .lista-btn-nav li:hover{
+        cursor: pointer;
+        color: #efb810;
+        border: 1px solid white;
+        transition: 0.1s;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+        -ms-transition: 0.1s;
+        -o-transition: 0.1s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: .15s;
+        -webkit-transition: .15s;
+        -moz-transition: .15s;
+        -ms-transition: .15s;
+        -o-transition: .15s;
+}
+
+    /*
+    ########################
+    #                      #
+    #     Presentacion MQ  #
+    #                      #
+    ########################
+    */
+
+    #Presentacion, #Presentacion .presentacion-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Presentacion .presentacion-container .texto-presentacion{
+        width: 100%;
+        line-height: 1rem;
+    }
+
+    #Presentacion .presentacion-container .texto-presentacion h1 span{
+        font-size: 2.5rem;
+    }
+
+    #Presentacion .presentacion-container .texto-presentacion h2{
+        font-size: 1.5rem;
+    }
+
+    #Presentacion .presentacion-container .image-presentacion{
+        height: 250px;
+        width: 250px;
+    }
+
+    #Presentacion .presentacion-container .image-presentacion img{
+        height: 280px;
+    }
+/*
+    ########################
+    #                      #
+    #     Sobre Mi   MQ375 #
+    #                      #
+    ########################
+*/
+
+#SobreMi .contenedor-about{
+    background: #15141410;
+    backdrop-filter: blur(80px);
+    box-shadow: 10px 10px 40px hsla(0, 0%, 100%, 0.4);
+    position: absolute;
+    height: 80%;
+    width: 95%;
+    margin-top: 0vh;
+}
+
+.codigo-sobre-mi .image-kaizen{
+    height: 50vh;
+    width: 50vh;
+}
+
+.codigo-sobre-mi{
+    position: relative;
+    height: 30vh;
+    width: 50vh;
+    order:1;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+}
+
+.kaizen{
+    position: absolute;
+    z-index: 3;
+    height: 80vh;
+    width: 50vh;
+    opacity: 0.33;
+    margin-right: -1rem;
+    margin-top: 16rem;
+    align-self: flex-end;
+}
+
+.body-about{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.contenido-sobre-mi {
+    align-self:start;
+    text-wrap: balance;
+}
+
+.body-about .contenido-sobre-mi h1{
+    font-size: 3vh;
+    margin-right: 1rem;
+    margin-left: -2rem;
+}
+
+
+.contenido-sobre-mi p{
+    font-size: 90%; 
+    margin-top: 0rem; 
+}
+
+/*
+    ########################
+    #                      #
+    #     Abilidades  MQ   #
+    #                      #
+    ########################
+*/
+
+#Abilidades{
+    height: 200vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+}
+
+#Abilidades .container-skill{
+    border-radius: 20px;
+    height: 180vh;
+    width: 95%;
+    margin-top: 0vh;
+}
+
+.skill-body{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    flex-direction: column;    
+}
+
+.derecha-skill, .izquierda-skillb{
+    width: 50vh;
+    height: 75vh;
+}
+
+.derecha-skill{
+    margin-top: 2rem;
+}
+
+
+.container-skill-bar{
+    width: 100%;
+    height: 110%;
+    border-radius: 7px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.container-skill-bar .skill-box{
+    width: 100%;
+    margin: 5px 0 ;
+    padding: 10px;
+}
+
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.izquierda-skillb{    
+    margin-right: 0; 
+}
+
+.izquierda-skill{
+    height: 90%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem 0rem;
+    justify-items: center;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.contenedor-icon-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #15141452;
+    backdrop-filter: blur(80px);
+    box-shadow: 10px 10px 40px hsla(255, 65%, 42%, 0.4);
+    border: 0.5px solid rgb(81, 76, 76);
+    width:5rem;
+    height:5rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-left: 1vh;
+}
+
+.contenedor-icon-skill .target-skill-image  img{
+    width:4rem;
+    height:5rem;
+    margin-top: 3px;
+}
+
+/*
+    ########################
+    #                      #
+    #     Proyectos QM     #
+    #                      #
+    ########################
+*/
+#Proyectos{
+    z-index: 2;
+    height: 180vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+#Proyectos .container-projects{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 95%;
+    width: 95%;
+}
+
+.container-projects .container-titulo-projects{
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+
+.target-content{
+    margin-bottom: 20px; 
+}
+
+.swiper-wrapper{
+    flex-direction: column;   
+}
+
+.p1{
+    margin-bottom:0px;
+}
+
+/*
+    ########################
+    #                      #
+    #     Contacto MQ      #
+    #                      #
+    ########################
+*/
+
+
+#Contacto{
+    height: 150vh;
+    z-index: 2;
+}
+
+.container-contacto{
+    z-index: 4;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+}
+
+.information ,.contact-form{
+    z-index: 4;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 65%;
+    width: 90%;
+}
+
+
+.form-btn{
+    margin-top: 25px;
+    margin-left: 150px;
+    height: 20%;
+    width: 40%;
+    border-radius: 5px;
+    border-style: none;
+    background: #1f3d470b;
+    backdrop-filter: blur(3px);
+    border: 1px solid white;
+    color: white;
+}
+
+.form-btn:hover{
+    background: #1f3d475d;
+    backdrop-filter: blur(6px);
+}
+
+
+
+}
+
+
+
