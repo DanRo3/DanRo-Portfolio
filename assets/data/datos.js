@@ -1,4 +1,4 @@
-export let skills = [
+const  skills = [
     {titulo: 'HTML',nombre:'skill-per html',
     porcent: '90%',direcccion:"assets/img/icons-skills/html.svg"},
     {titulo: 'CSS',nombre:'skill-per css',porcent: '60%',direcccion:"assets/img/icons-skills/css.svg"},
